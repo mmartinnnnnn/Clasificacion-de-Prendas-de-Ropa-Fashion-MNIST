@@ -1,6 +1,6 @@
 # Clasificación de Prendas de Ropa — Fashion-MNIST
 
-Trabajo Práctico 02 de la materia **Laboratorio de Datos** (UBA) — 1er cuatrimestre 2025.
+Trabajo Práctico 02 de la materia **Laboratorio de Datos** (FCEN, UBA)
 
 ## Objetivo
 
