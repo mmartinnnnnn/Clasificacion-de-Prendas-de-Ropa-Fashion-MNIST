@@ -1,13 +1,6 @@
 """
 
 Laboratorio de Datos - TP2 - Clasificación y selección de modelos
-
-        Grupo Marcel Mango
-
-        Martín Rabinotivz
-        Lucas Ballester
-        Lautaro Paz Curtet
-        Renato Trucillo Biglieri
         
 Descripción:
     
