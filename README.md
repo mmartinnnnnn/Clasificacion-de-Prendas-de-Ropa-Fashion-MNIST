@@ -2,26 +2,31 @@
 
 Trabajo Práctico 02 de la materia **Laboratorio de Datos** (FCEN, UBA)
 
-## Objetivo
+## Descripción General
 
-Clasificar imágenes de prendas de ropa del dataset Fashion-MNIST usando modelos
-de machine learning, evaluando su performance con métricas de clasificación
-y validación cruzada.
+Este proyecto aborda el desarrollo y la evaluación de modelos de aprendizaje supervisado sobre el dataset Fashion-MNIST. 
 
-## Dataset
+A través de un análisis exploratorio espacial por píxeles (utilizando métricas como el Rango Intercuartílico - IQR), se diseñaron estrategias de extracción de características para implementar modelos de clasificación binaria y multiclase, optimizando sus hiperparámetros mediante validación cruzada k-fold y evaluando su generalización en conjuntos held-out.
 
-[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) — 
-70.000 imágenes de 28x28 píxeles representando 10 tipos de prendas de ropa.
+## Contenido y Metodología
 
-## Contenido
+- **Análisis Exploratorio y Pixel-wise EDA:** Inspección visual de imágenes, análisis de dispersión espacial por clase mediante heatmaps de IQR y selección orientada de atributos (píxeles de mayor varianza).
+- **Clasificación Binaria (Clases 0 vs 8):** Implementación del algoritmo K-Nearest Neighbors (KNN), evaluando la influencia del número de vecinos (\(k\)) y la combinación de atributos sobre métricas como Accuracy y F1-Score.
+- **Clasificación Multiclase (10 Clases):** Entrenamiento de Árboles de Decisión para la categorización completa del dataset.
+- **Validación Cruzada y Selección de Hiperparámetros:** Optimización de la profundidad máxima (`max_depth`) mediante \(k\)-fold cross-validation para prevenir sobreajuste.
+- **Evaluación de Modelos:** Análisis de rendimiento en el conjunto de prueba final (*held-out*) a través de matrices de confusión y reporte de métricas por clase.
 
-- Análisis exploratorio de datos (EDA) con visualización de imágenes y distribuciones
-- Clasificación binaria (clase 0 vs clase 8) con KNN
-- Clasificación multiclase (10 clases) con árboles de decisión
-- Selección de hiperparámetros con k-fold cross validation
-- Evaluación con exactitud y matriz de confusión
+## Fuente de Datos
 
-## Tecnologías
+El análisis utiliza el dataset público **Fashion-MNIST**, compuesto por:
 
-- Python (pandas, numpy, matplotlib, scikit-learn)
-- Jupyter Notebook / Spyder
+- **70.000 imágenes** en escala de grises de \(28 \times 28\) píxeles.
+- **10 categorías** de prendas de ropa y calzado (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag y Ankle boot).
+
+## Tecnologías Utilizadas
+
+- **Lenguaje:** Python
+- **Machine Learning & Métricas:** Scikit-Learn
+- **Procesamiento de Datos:** Pandas, NumPy
+- **Visualización:** Matplotlib, Seaborn
+- **Entorno de Desarrollo:** Jupyter Notebook / Spyder
